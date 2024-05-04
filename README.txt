@@ -1,8 +1,6 @@
 Landing page for Hylomatter.
 
-Reference:
-Signup Form:
-
+Need to add dynamics for contact form:
 	The signup form won't actually do anything (other than report back with a "thank you" message)
 	until you tie it to either a third party service (eg. MailChimp) or your own hosted solution.
 	In either case, there are two ways to go:
@@ -17,25 +15,3 @@ Signup Form:
 	so you'll need to consult their/its documentation. However, I have included some basic code
 	(under "Signup Form" in assets/js/main.js) that will at least let you interact with the
 	form itself.
-
-
-Slideshow Background:
-
-	This is pretty straightforward, but there are two JS settings you'll want to be aware of
-	(found under "Slideshow Background" in assets/js/main.js):
-
-	images
-
-		The list of images to cycle through, given in the following format:
-
-			'url': 'alignment'
-
-		Where 'url' is the image (eg. 'images/foo.jpg', 'http://somewhere.else/foo.jpg'), and
-		'alignment' is how the image should be vertically aligned ('top', 'center', or 'bottom').
-
-		Note: Browsers that don't support CSS transitions (like IE<=9) will only see the first image.
-
-	delay
-
-		How long to wait between transitions (in ms). Note that this must be at least twice as long as
-		the transition speed itself (currently 3 seconds).
